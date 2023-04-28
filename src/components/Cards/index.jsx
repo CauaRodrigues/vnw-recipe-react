@@ -1,22 +1,37 @@
 import React from "react";
 
-import { cards } from "./cards.styled";
-import repipes from "../../assets/recipes";
+import * as S from "./cards.styled";
 
 export default function Cards() {
 	return (
-		<div className="cards">
-			<S.Wrapper>
-				<h2>latest recipes</h2>
+		<S.Container>
+			<h2>latest recipes</h2>
 
-				{cards.map(({ name, img }) => (
-					<div className="card">
-						<img src={img} alt={name} />
+			<S.Content>
+				<S.Card>
+					<img src="cake.png" alt="cake" />
 
-						<h3>{name}</h3>
+					<div className="card--info">
+						<figcaption>Red Velvet Cake</figcaption>
 					</div>
-				))}
-			</S.Wrapper>
-		</div>
+				</S.Card>
+
+				<S.Card>
+					<img src="pizza.png" alt="pizza" />
+
+					<div className="card--info">
+						<figcaption>Red Velvet Cake</figcaption>
+					</div>
+				</S.Card>
+
+				<S.Card>
+					<img src="butter.png" alt="butter" />
+
+					<div className="card--info">
+						<figcaption>Red Velvet Cake</figcaption>
+					</div>
+				</S.Card>
+			</S.Content>
+		</S.Container>
 	);
 }

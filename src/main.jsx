@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
   
   body,
   html {
-  background-color: #ffff;
+  background-color: #F2F4F1;
   color: #373737;
   }
   
